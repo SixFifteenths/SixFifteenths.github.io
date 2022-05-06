@@ -1,6 +1,16 @@
 ## Welcome to GitHub Pages
+
 至少证明我编辑过是吧......
 
+你可能需要的：
+
+* ## [/S-F-Blog  是真正的主页](/S-F-Blog)
+*   * ### [/Publish 是博客](/S-F-Blog/Publish)
+* ## [/img 是弔图](/img) 
+*   * ### 有slobber.gif Penrose.jpg favicon.ico
+* ## [/百度 是纯享版百度](/百度)
+
+下面的我先挂着 懒得动了
 You can use the [editor on GitHub](https://github.com/SixFifteenths/SixFifteenths.github.io/edit/main/index.md) to maintain and preview the content for your website in Markdown files.
 
 Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
