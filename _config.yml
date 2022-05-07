@@ -1,4 +1,8 @@
-theme: jekyll-theme-cayman
+theme: jekyll-theme-slate
 descryption: SixFifteenths’s Blog
 title: 十五分之六的个人网站
-favicon: /favicon.ico
+subtitle: 在做了在做了
+author: SixFifteenths
+language: zh-CN
+favicon: /img/favicon.ico
+show_downloads: true
