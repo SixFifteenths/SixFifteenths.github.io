@@ -1,0 +1,10 @@
+body {
+            background-image: url("https://statics.pku1.miaomiaomiao.com.cn/static/files/a1c75c7eb12b4f7cb75ed149bdc3dc1f.jpg");
+            background-position: 18% 20%;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-size: cover;
+            -webkit-background-size: cover; /* 兼容Webkit内核浏览器如Chrome和Safari */
+            -o-background-size: cover; /* 兼容Opera */
+            zoom: 1;
+        }
