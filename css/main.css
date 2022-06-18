@@ -88,18 +88,4 @@ body {
   margin-top: 20px;
 }
 
-/* 响应式布局 - 当屏幕的宽度小于 800 像素时，使两列堆叠而不是并排 */
-@media screen and (max-width: 800px) {
-  .leftcolumn, .rightcolumn {   
-    width: 100%;
-    padding: 0;
-  }
-}
-
-/* 响应式布局 - 当屏幕的宽度小于 400 像素时，使导航链接堆叠而不是并排 */
-@media screen and (max-width: 400px) {
-  .topnav a {
-    float: none;
-    width: 100%;
-  }
 }
