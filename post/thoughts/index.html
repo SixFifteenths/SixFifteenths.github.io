@@ -1,0 +1,179 @@
+<html>
+  <head>
+    <meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>思考箱模拟笔记 | 十五分之六</title>
+<link rel="shortcut icon" href="https://SixFifteenths.github.io/favicon.ico?v=1688233432517">
+<link href="https://cdn.jsdelivr.net/npm/remixicon@2.3.0/fonts/remixicon.css" rel="stylesheet">
+<link rel="stylesheet" href="https://SixFifteenths.github.io/styles/main.css">
+<link rel="alternate" type="application/atom+xml" title="思考箱模拟笔记 | 十五分之六 - Atom Feed" href="https://SixFifteenths.github.io/atom.xml">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Droid+Serif:400,700">
+
+
+
+    <meta name="description" content="
+此处用于模拟Gridea Web的思考箱功能，由于我不太喜欢Gridea Web的排版和资金缺乏，仍旧选择使用Gridea。
+我会在这里存放我时不时想到的一些小思考或者小技巧，以供不时之需。
+每一条都有编号，日期，地点，备注。
+
+0.现在..." />
+    <meta name="keywords" content="" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.10.0/katex.min.css">
+    <script src="//cdn.jsdelivr.net/gh/highlightjs/cdn-release@11.5.1/build/highlight.min.js"></script>
+  </head>
+  <body>
+    <div class="main">
+      <div class="main-content">
+        <div class="site-header">
+  <a href="https://SixFifteenths.github.io">
+  <img class="avatar" src="https://SixFifteenths.github.io/images/avatar.png?v=1688233432517" alt="">
+  </a>
+  <h1 class="site-title">
+    十五分之六
+  </h1>
+  <p class="site-description">
+    于是，向你呈现——
+<h1>我，还有我的数竞路。
+  </p>
+  <div class="menu-container">
+    
+      
+        <a href="/" class="menu">
+          首页
+        </a>
+      
+    
+      
+        <a href="/archives" class="menu">
+          归档
+        </a>
+      
+    
+      
+        <a href="/tags" class="menu">
+          标签
+        </a>
+      
+    
+      
+        <a href="/post/about" class="menu">
+          关于
+        </a>
+      
+    
+      
+        <a href="/post/thoughts" class="menu">
+          思考
+        </a>
+      
+    
+  </div>
+  <div class="social-container">
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+  </div>
+</div>
+
+        <div class="post-detail">
+          <article class="post">
+            <h2 class="post-title">
+              思考箱模拟笔记
+            </h2>
+            <div class="post-info">
+              <span>
+                1919-08-10
+              </span>
+              <span>
+                1 min read
+              </span>
+              
+            </div>
+            
+            <div class="post-content-wrapper">
+              <div class="post-content" v-pre>
+                <blockquote>
+<p>此处用于模拟Gridea Web的思考箱功能，由于我不太喜欢Gridea Web的排版和资金缺乏，仍旧选择使用Gridea。<br>
+我会在这里存放我时不时想到的一些小思考或者小技巧，以供不时之需。<br>
+每一条都有编号，日期，地点，备注。</p>
+</blockquote>
+<p>0.现在正式开始。</p>
+<p>--2023.6.28，家中</p>
+<hr>
+<p>1.我从今天起要养成三个习惯。</p>
+<p>一是不熬夜，二是每天晚上回想自己今天学了什么，做了什么，三是上课不摸鱼。</p>
+<p>我验证了，这很有帮助。</p>
+<p>--2023.6.30，家中</p>
+
+              </div>
+              <div class="toc-container">
+                
+              </div>
+            </div>
+          </article>
+        </div>
+
+        
+
+        
+
+        <div class="site-footer">
+  Powered by <a href="https://github.com/getgridea/gridea" target="_blank">Gridea</a>
+  <a class="rss" href="https://SixFifteenths.github.io/atom.xml" target="_blank">
+    <i class="ri-rss-line"></i> RSS
+  </a>
+</div>
+
+      </div>
+    </div>
+
+    <script>
+      hljs.initHighlightingOnLoad()
+
+      let mainNavLinks = document.querySelectorAll(".markdownIt-TOC a");
+
+      // This should probably be throttled.
+      // Especially because it triggers during smooth scrolling.
+      // https://lodash.com/docs/4.17.10#throttle
+      // You could do like...
+      // window.addEventListener("scroll", () => {
+      //    _.throttle(doThatStuff, 100);
+      // });
+      // Only not doing it here to keep this Pen dependency-free.
+
+      window.addEventListener("scroll", event => {
+        let fromTop = window.scrollY;
+
+        mainNavLinks.forEach((link, index) => {
+          let section = document.getElementById(decodeURI(link.hash).substring(1));
+          let nextSection = null
+          if (mainNavLinks[index + 1]) {
+            nextSection = document.getElementById(decodeURI(mainNavLinks[index + 1].hash).substring(1));
+          }
+          if (section.offsetTop <= fromTop) {
+            if (nextSection) {
+              if (nextSection.offsetTop > fromTop) {
+                link.classList.add("current");
+              } else {
+                link.classList.remove("current");    
+              }
+            } else {
+              link.classList.add("current");
+            }
+          } else {
+            link.classList.remove("current");
+          }
+        });
+      });
+
+    </script>
+  </body>
+</html>
